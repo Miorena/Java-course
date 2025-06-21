@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Prompt usser for input
+        // Prompt user for stundent details
         System.out.print("Enter name: ");
         String name = scanner.next();
         System.out.print("Enter age: ");
