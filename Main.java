@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Prompt user for stundent details
+        // Prompt user for stundent's details
         System.out.print("Enter name: ");
         String name = scanner.next();
         System.out.print("Enter age: ");
@@ -15,7 +15,7 @@ public class Main {
         // Create a Student object using the parameterized constructor
         Student student = new Student(name, age, average);
 
-        // Display the student details
+        // Display the student's details
         System.out.println("\n--- Student Details ---");
         System.out.println("Name: " + student.getName());
         System.out.println("Age: " + student.getAge());
