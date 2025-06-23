@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) {
+    public static Book promptBookDetails() {
         Scanner scanner = new Scanner(System.in);
 
-        // Prompt user for book's deatils
         System.out.print("Enter book title: ");
         String title = scanner.nextLine();
         System.out.print("Enter book author: ");
@@ -12,9 +11,11 @@ public class App {
         System.out.print("Enter year published: ");
         int yearPublished = scanner.nextInt();
 
-        Book book = new Book(title, author, yearPublished);
-        book.displayDetails();
-
         scanner.close();
+        return new Book(title, author, yearPublished);
+    }
+    public static void main(String[] args) {
+        Book book = promptBookDetails();
+        book.displayDetails();
     }
 }
