@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Book {
     // Attributes
     private String title;
@@ -25,6 +27,22 @@ public class Book {
         System.out.println("Author: " + getAuthor());
         System.out.println("Year Published: " + getYearPublished());
         System.out.println("---------------------");
+    }
+
+    public void modifyBookDetails(Scanner scanner) {
+        System.out.print("\nModify Title: ");
+        String newTitle = scanner.nextLine();
+
+        System.out.print("Modify Author: ");
+        String newAuthor = scanner.nextLine();
+
+        System.out.print("Modify Year Published: ");
+        int newYearPublished = scanner.nextInt();
+        scanner.nextLine();
+
+        setTitle(newTitle);
+        setAuthor(newAuthor);
+        setYearPublished(newYearPublished);
     }
 
     // Getters
