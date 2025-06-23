@@ -13,9 +13,9 @@ public class Student {
 
     // Parameterized Constructor
     public Student(String name, int age, double average) {
-        this.name = name;
-        this.age = age;
-        this.average = average;
+        this.setName(name);
+        this.setAge(age);
+        this.setAverage(average);
     }
 
     // Getters
@@ -30,7 +30,7 @@ public class Student {
         if (age >= 0 && age <= 110) {
             this.age = age;
         } else {
-            System.out.println("\nInvalid age !");
+            System.out.println("\n> Invalid age !");
         }
     }
 
@@ -38,7 +38,7 @@ public class Student {
         if (average >= 0.0 && average <= 20.0) {
             this.average = average;
         } else {
-            System.out.println("Invalid average !\n");
+            System.out.println("> Invalid average !\n");
         }
     }
 }

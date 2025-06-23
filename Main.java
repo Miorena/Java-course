@@ -6,7 +6,7 @@ public class Main {
 
         // Prompt user for stundent's details
         System.out.print("Enter name: ");
-        String name = scanner.next();
+        String name = scanner.nextLine();
         System.out.print("Enter age: ");
         int age = scanner.nextInt();
         System.out.print("Enter average: ");
